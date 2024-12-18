@@ -3,12 +3,11 @@
 import React from "react";
 import { Box, Typography, CircularProgress, LinearProgress, Paper } from "@mui/material";
 
-
 export default function TrackAttendance() {
   const attendance = 45; // Example value, can be fetched dynamically
 
   return (
- 
+    <div>
     <Paper elevation={3} sx={{ padding: 3, borderRadius: 2, marginBottom: 4 }}>
       <Typography variant="h5" gutterBottom>
         Current Attendance
@@ -49,6 +48,6 @@ export default function TrackAttendance() {
         />
       </Box>
     </Paper>
-
+    </div>
   );
 }

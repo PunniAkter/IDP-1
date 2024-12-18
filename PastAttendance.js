@@ -12,10 +12,9 @@ import {
   TableRow,
 } from "@mui/material";
 
-
 export default function PastAttendance({ attendanceRecords = [] }) {
   return (
-
+    <div>
     <Paper elevation={3} sx={{ padding: 3, borderRadius: 2, marginTop: 4 }}>
       <Typography variant="h5" gutterBottom>
         Past Attendance Records
@@ -59,6 +58,6 @@ export default function PastAttendance({ attendanceRecords = [] }) {
         </Table>
       </TableContainer>
     </Paper>
-
+    </div>
   );
 }

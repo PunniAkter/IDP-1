@@ -14,7 +14,6 @@ import {
   DialogContent,
   DialogActions,
 } from "@mui/material";
-import Layout from "@/app/layout";
 
 // Example routine data
 const routine = [
@@ -56,7 +55,6 @@ export default function AttendanceReminders() {
   };
 
   return (
-  
     <Paper elevation={3} sx={{ padding: 3, borderRadius: 2 }}>
       <Typography variant="h5" gutterBottom>
         Attendance Reminders
@@ -124,6 +122,5 @@ export default function AttendanceReminders() {
         </DialogActions>
       </Dialog>
     </Paper>
-
   );
 }

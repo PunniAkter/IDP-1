@@ -7,7 +7,6 @@ import PinBasedAttendance from "./PinBasedAttendance";
 import PastAttendance from "./PastAttendance";
 import Notifications from "./Notifications";
 
-
 export default function Dashboard() {
   const [activePassword, setActivePassword] = useState("");
   const [attendanceRecords, setAttendanceRecords] = useState([]);
@@ -31,26 +30,28 @@ export default function Dashboard() {
   };
 
   return (
-
+    <div>
     <Container maxWidth="lg" sx={{ mt: 5 }}>
       <Typography variant="h4" gutterBottom>
         Student Dashboard
       </Typography>
 
+      {/* Password Generator */}
       <PasswordGenerator onPasswordGenerated={handlePasswordGenerated} />
 
+      {/* PIN-Based Attendance */}
       <PinBasedAttendance
         activePassword={activePassword}
         onAttendanceMarked={handleAttendanceMarked}
       />
 
-
+      {/* Past Attendance Records */}
       <PastAttendance attendanceRecords={attendanceRecords} />
 
+      {/* Notifications */}
       <Notifications message={notification} />
     </Container>
-
-
+    </div>
   );
 }
 

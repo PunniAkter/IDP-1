@@ -15,7 +15,6 @@ import NotificationsActiveIcon from "@mui/icons-material/NotificationsActive";
 import EventNoteIcon from "@mui/icons-material/EventNote";
 import AccessTimeIcon from "@mui/icons-material/AccessTime";
 
-
 export default function Notifications() {
   const demoSchedule = [
     { subject: "Mathematics", time: "09:00 AM", location: "Room 101" },

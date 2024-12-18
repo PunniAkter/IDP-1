@@ -18,7 +18,6 @@ import {
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import ExpandLessIcon from "@mui/icons-material/ExpandLess";
 
-
 // Sample local JSON data
 const attendanceRecords = [
   {
@@ -61,7 +60,6 @@ export default function History() {
   };
 
   return (
-
     <Paper elevation={3} sx={{ padding: 3, borderRadius: 2, marginBottom: 4 }}>
       <Typography variant="h5" gutterBottom>
         Past Attendance Records
@@ -169,6 +167,5 @@ export default function History() {
         </Table>
       </TableContainer>
     </Paper>
-
   );
 }

@@ -8,7 +8,6 @@ import { Box, Paper, Typography } from "@mui/material";
 import { useRouter } from "next/navigation"; // For navigation
 import Grid from "@mui/material/Grid";
 
-
 export default function Menu() {
   const router = useRouter();
 
@@ -17,6 +16,8 @@ export default function Menu() {
   };
 
   return (
+    <html>
+      <body>
     <div>
     <Box sx={{ flexGrow: 1, padding: 4 }}>
       <Typography
@@ -101,5 +102,7 @@ export default function Menu() {
       </Grid>
     </Box>
     </div>
+    </body>
+    </html>
   );
 }

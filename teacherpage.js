@@ -2,7 +2,6 @@ import React from 'react';
 import { Typography, Accordion, AccordionSummary, AccordionDetails, Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Paper } from '@mui/material';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
-
 const courses = [
   {
     id: 1,
@@ -35,7 +34,7 @@ const courses = [
 
 export default function Teacher() {
   return (
-
+    <html><body>
     <div>
       <Typography variant="h4" sx={{ margin: 2 }}>Today's Class Overview</Typography>
       {courses.map(course => (
@@ -72,5 +71,6 @@ export default function Teacher() {
         </Accordion>
       ))}
     </div>
+    </body></html>
   );
 }

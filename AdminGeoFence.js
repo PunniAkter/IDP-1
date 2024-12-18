@@ -12,7 +12,6 @@ import {
 } from "@mui/material";
 import GeoFencingComponent from "./GeoFencingComponent";
 
-
 export default function AdminGeoFenceComponent() {
   const [latitude, setLatitude] = useState(23.829517426731908);
   const [longitude, setLongitude] = useState(90.56631363765501);
@@ -29,7 +28,6 @@ export default function AdminGeoFenceComponent() {
   };
 
   return (
-   
     <Box sx={{ display: "flex", flexDirection: "column", gap: 4 }}>
       <Paper elevation={4} sx={{ padding: 4, borderRadius: 3 }}>
         <Typography variant="h4" align="center" sx={{ color: "#3f51b5", mb: 3 }}>
@@ -78,6 +76,5 @@ export default function AdminGeoFenceComponent() {
       {/* Pass memoized geo-fence to the child component */}
       <GeoFencingComponent adminGeoFence={geoFence} />
     </Box>
-  
   );
 }

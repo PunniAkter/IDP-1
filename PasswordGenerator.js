@@ -3,7 +3,6 @@
 import React, { useState, useEffect } from "react";
 import { Paper, Typography, Box } from "@mui/material";
 
-
 export default function PasswordGenerator({ onPasswordGenerated }) {
   const [password, setPassword] = useState("");
 
@@ -24,7 +23,7 @@ export default function PasswordGenerator({ onPasswordGenerated }) {
   }, [onPasswordGenerated]);
 
   return (
-
+    <div>
     <Paper elevation={3} sx={{ padding: 3, borderRadius: 2, marginBottom: 4 }}>
       <Typography variant="h5" gutterBottom>
         Current Password
@@ -46,6 +45,6 @@ export default function PasswordGenerator({ onPasswordGenerated }) {
         </Typography>
       </Box>
     </Paper>
-
+    </div>
   );
 }

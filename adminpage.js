@@ -5,7 +5,6 @@ import { Typography, Accordion, AccordionSummary, AccordionDetails, Table, Table
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import SaveIcon from '@mui/icons-material/Save';
 
-
 const initialCourses = [
   {
     id: 1,
@@ -61,7 +60,7 @@ export default function AdminPage() {
   };
 
   return (
-
+    <html><body>
     <div>
       <Typography variant="h4" sx={{ margin: 2 }}>Admin Panel - Edit Attendance</Typography>
       {courses.map(course => (
@@ -118,6 +117,7 @@ export default function AdminPage() {
       <Button startIcon={<SaveIcon />} variant="contained" color="primary" sx={{ mt: 2 }} onClick={saveChanges}>
         Save All Changes
       </Button>
-      </div>
+    </div>
+    </body></html>
   );
 }
